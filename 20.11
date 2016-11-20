@@ -1,0 +1,22 @@
+package pkg2011;
+
+import java.util.*;
+import java.io.*;
+
+public class Anagrams {
+    
+    public static void main(String[] args) {
+        Map<String, List<Integer>> map = new HashMap<String, List<Integer>>();
+
+map.put("r", new ArrayList<>(Arrays.asList(0, 4, 8, 9, 12)));
+map.put("a", new ArrayList<Integer>(Arrays.asList(0, 4, 8, 9, 12)));
+map.put("m", new ArrayList<Integer>(Arrays.asList(0, 4, 8, 9, 12)));
+
+for (Map.Entry<String, List<Integer>> entry : map.entrySet()) {
+            String key = entry.getKey();
+            List<Integer> values = entry.getValue();
+            System.out.println(key+values);
+        }
+    }
+}
+
