@@ -1,0 +1,39 @@
+package pkg23.pkg11;
+
+import java.util.Date;
+
+/**
+ *
+ * @author Hillel5
+ */
+public abstract class AbstractFile  implements MyFile {
+    private final String name;
+    private final long size;
+    private final Date createdDate;
+    
+    public AbstractFile (String name, long size, Date createdDate){
+        this.name();
+        this.createdDate();
+        this.size();
+    }
+            
+}
+
+
+package pkg23.pkg11;
+
+import java.util.Date;
+
+
+public interface Myfile {
+
+    /**
+     *
+     * @return
+     */
+    String name();
+    Long size();
+    Date createdDate();
+   
+}
+
